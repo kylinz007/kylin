@@ -84,17 +84,17 @@
 
 
 
-<meta name="description" content="0：程序员从0开始刚开始公司让转的时候其实我是拒绝的，因为你不能让我转就转，我总得试一下。然后发现Win上svn转git是真TMTMTM的方便，因为只需要安装一个小乌龟git版，全程无痛可视化操作。无奈用了MAC，只能继续寻找可用的方法，各种百度谷歌尝试过后，终于迁移成功。（windows也可用如下方式）">
+<meta name="description" content="0：程序员从0开始当搜索到此篇文章时，肯定是你们公司要求你们把在svn上的项目迁移到git，不要悲伤，不要心急。其实刚开始公司让转git的时候我也是拒绝的，因为你不能让我转就转，我总得试一下。言归正传，看到这里我想对你说的是，如果你是windows用户的话，下面的不用看了。赶紧去下个小乌龟git版，全程无痛可视化迁移操作，快捷方便。but!!!!你是linux或者mac用户的话，就老实继续看下面的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="svn迁移git">
 <meta property="og:url" content="http://yoursite.com/2017/03/17/svn迁移git/index.html">
 <meta property="og:site_name" content="kylin007's blog">
-<meta property="og:description" content="0：程序员从0开始刚开始公司让转的时候其实我是拒绝的，因为你不能让我转就转，我总得试一下。然后发现Win上svn转git是真TMTMTM的方便，因为只需要安装一个小乌龟git版，全程无痛可视化操作。无奈用了MAC，只能继续寻找可用的方法，各种百度谷歌尝试过后，终于迁移成功。（windows也可用如下方式）">
+<meta property="og:description" content="0：程序员从0开始当搜索到此篇文章时，肯定是你们公司要求你们把在svn上的项目迁移到git，不要悲伤，不要心急。其实刚开始公司让转git的时候我也是拒绝的，因为你不能让我转就转，我总得试一下。言归正传，看到这里我想对你说的是，如果你是windows用户的话，下面的不用看了。赶紧去下个小乌龟git版，全程无痛可视化迁移操作，快捷方便。but!!!!你是linux或者mac用户的话，就老实继续看下面的">
 <meta property="og:image" content="http://yoursite.com/images/new_rep.png">
-<meta property="og:updated_time" content="2017-03-21T11:49:37.000Z">
+<meta property="og:updated_time" content="2017-03-21T12:02:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="svn迁移git">
-<meta name="twitter:description" content="0：程序员从0开始刚开始公司让转的时候其实我是拒绝的，因为你不能让我转就转，我总得试一下。然后发现Win上svn转git是真TMTMTM的方便，因为只需要安装一个小乌龟git版，全程无痛可视化操作。无奈用了MAC，只能继续寻找可用的方法，各种百度谷歌尝试过后，终于迁移成功。（windows也可用如下方式）">
+<meta name="twitter:description" content="0：程序员从0开始当搜索到此篇文章时，肯定是你们公司要求你们把在svn上的项目迁移到git，不要悲伤，不要心急。其实刚开始公司让转git的时候我也是拒绝的，因为你不能让我转就转，我总得试一下。言归正传，看到这里我想对你说的是，如果你是windows用户的话，下面的不用看了。赶紧去下个小乌龟git版，全程无痛可视化迁移操作，快捷方便。but!!!!你是linux或者mac用户的话，就老实继续看下面的">
 <meta name="twitter:image" content="http://yoursite.com/images/new_rep.png">
 
 
@@ -339,7 +339,7 @@
       
 
       
-        <h3 id="0：程序员从0开始"><a href="#0：程序员从0开始" class="headerlink" title="0：程序员从0开始"></a>0：程序员从0开始</h3><p>刚开始公司让转的时候其实我是拒绝的，因为你不能让我转就转，我总得试一下。然后发现Win上svn转git是真TMTMTM的方便，因为只需要安装一个小乌龟git版，全程无痛可视化操作。无奈用了MAC，只能继续寻找可用的方法，各种百度谷歌尝试过后，终于迁移成功。（windows也可用如下方式）<br><a id="more"></a></p>
+        <h3 id="0：程序员从0开始"><a href="#0：程序员从0开始" class="headerlink" title="0：程序员从0开始"></a>0：程序员从0开始</h3><p>当搜索到此篇文章时，肯定是你们公司要求你们把在svn上的项目迁移到git，不要悲伤，不要心急。其实刚开始公司让转git的时候我也是拒绝的，因为你不能让我转就转，我总得试一下。<br>言归正传，看到这里我想对你说的是，如果你是windows用户的话，下面的不用看了。赶紧去下个小乌龟git版，全程无痛可视化迁移操作，快捷方便。but!!!!你是linux或者mac用户的话，就老实继续看下面的内容吧！！（其实windows也可用如下方式）<br><a id="more"></a></p>
 <p>既然准备从svn迁移git，首先本地得安装<a href="https://git-scm.com/downloads" target="_blank" rel="external">git客户端</a>。<br>安装好后执行如下命令</p>
 <h3 id="1：生成密钥"><a href="#1：生成密钥" class="headerlink" title="1：生成密钥"></a>1：生成密钥</h3><p><code>ssh-keygen -t rsa -C &quot;kylinz007&quot;</code><br>执行此命令生成一对RSA密钥,引号中填入github注册邮箱账号或用户名</p>
 <p><code>cat ~/.ssh/id_rsa.pub</code><br>复制显示出来的信息，注意一定要复制完整 </p>
@@ -350,7 +350,7 @@
 <p>将svn上的项目先下载到本地（包含主干，分支，标记，所有提交记录）<br><code>git svn clone &#39;svn项目路径&#39; -t tags -b branches -T trunk 项目名</code></p>
 <p>将.git/refs/remotes目录相应分支文件COPY至.git/ref/heads目录下<br><code>cd 项目名/.git/refs/remotes</code><br><code>mv origin ../heads/</code></p>
 <h3 id="4：推送至git公共仓库"><a href="#4：推送至git公共仓库" class="headerlink" title="4：推送至git公共仓库"></a>4：推送至git公共仓库</h3><p>配置git账户地址信息:<br><code>git config --global user.name &quot;kylinz007&quot;</code><br><code>git config --global user.email &quot;kylinz007@163.com&quot;</code><br><code>git remote add origin git@github.com:kylinz007/git2svn</code></p>
-<p>push至Github仓库<br>git push -u origin –all</p>
+<p>如果执行第三行命令添加远程仓库报错，可能是已经添加了远程仓库，执行下面命令删除远程仓库<br><code>git remote rm origin</code><br>push至Github仓库<br>git push -u origin –all</p>
 <p>大功告成！</p>
 
       
